@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Yours</title>
+    <link rel="icon" href="logo.jpg">
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- fonts styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="company">
+          <ul class="logo-l">
+            <li class="logo-li"><img src="logo.jpg" alt="" class="logo"></li>
+            <li class="logo-li"><h3>Book Yours</h3></li>
+          </ul>
+        </div>
+        <div class="list">
+          <!-- first modal for login page -->
+            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalToggleLabel">Login</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <!-- form for login -->
+                        <form action="#" method="post" class="frm">
+                            Email : 
+                            <input type="text" name="email" class="modal-input" required><br>
+                            Password : 
+                            <input type="password" name="pass" class="modal-input" required><br>
+                            <button type="submit" class="btn form-sub" name="sendotp">Login</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <p class="question">Not a Customer?</p>
+                      <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Sign Up</button>
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Second modal for sign up -->
+              <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalToggleLabel2">Sign Up</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form action="#" method="post" class="frm">
+                          Email : 
+                          <input type="text" name="email" class="modal-input"><br>
+                          <button type="submit" class="btn form-sub" name="sendotp">Send OTP</button>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                        <p class="question">Existing User?</p>
+                      <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Login</button>
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="btn b" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Login</a>
+        </div>
+    </nav>
+
+     <!-- search bar -->
+     <form action="" method="post">
+        <div id="search">
+          <input type="text" autofocus class="search" placeholder="Enter City or Hotel">
+          <!-- search icon -->
+          <button type="submit" class="search-icon"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+          </svg></button>
+        </div>
+      </form>
+
+      <!-- check in check out information -->
+      <p class="check-desc">Check available hotels by entering check-in and check-out dates.</p>
+      <div id="check">
+        <form action="" method="post">
+          <div class="check">Check-in date</div>
+          <input type="date" name="check-in"><br>
+          <div class="check">Check-out date</div>
+          <input type="date" name="check-out"><br>
+          <button type="submit" class="btn niche" name="available">Search</button>
+        </form>
+      </div>
+
+      <!-- hotels -->
+    <div class="card">
+        <img src="https://t-cf.bstatic.com/xdata/images/hotel/square200/238907099.webp?k=ede02234c7e4449de3eba4887f86e03aa982df52f0c6f56a91d02d7f45683514&o=" class="hotel_img" alt="">
+        <div class="features">
+            <div class="head">
+        <h2>Snow Valley Resorts Shimla</h2>
+        <h4>Hotel in Shimla</h4>
+    </div>
+        <q class="details">Featuring free WiFi, Snow Valley Resorts offers accommodation 5.7 km from The Mall Road. Free private parking is available on site. The food, the ambience and the comfort!</q>
+        <div class="price">Price from Rs.4569/- per night</div>
+        <button class="btn avail"><a href="individual.html">Check Availability</a></button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://t-cf.bstatic.com/xdata/images/hotel/square200/189246849.webp?k=86b4eb2b3c49101cc7b02d2ff08fbfbbe4971cdd4bfe9cbb977ea80d9ac9f8ee&o=" class="hotel_img" alt="">
+        <div class="features">
+            <div class="head">
+        <h2>Treebo Trend Maharaja </h2>
+        <h4>Hotel in Shimla</h4>
+    </div>
+        <q class="details">Treebo Trend Maharaja is located in Shimla, 2.1 km from The Ridge, Shimla and 5 km from Indian Institute of Advanced Study.
+        </q>
+        <div class="price">Price from Rs.1999/- per night</div>
+        <button class="btn avail"><a href="">Check Availability</a></button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://t-cf.bstatic.com/xdata/images/hotel/square200/238907099.webp?k=ede02234c7e4449de3eba4887f86e03aa982df52f0c6f56a91d02d7f45683514&o=" class="hotel_img" alt="">
+        <div class="features">
+            <div class="head">
+        <h2>Clarkes hotel, A grand heritage hotel</h2>
+        <h4>Hotel in Shimla</h4>
+    </div>
+        <q class="details">Located on Mall Road, the main street of Shimla and 600 metres from The Ridge and Scandal Point, Clarkes Hotel operates a 24-hour front desk to assist guests. Excellent location with good breakfast and super room service
+        </q>
+        <div class="price">Price from Rs.7500/- per night</div>
+        <button class="btn avail"><a href="">Check Availability</a></button>
+        </div>
+    </div>
+</body>
+</html>
